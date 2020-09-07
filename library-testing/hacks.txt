@@ -1,0 +1,19 @@
+# Plot regression against actual data
+plt.figure(figsize=(12, 6))
+# Population Regression Line
+plt.plot(X,rl['RegL'], label = 'Actual (Population Regression Line)',color='green')
+# Least squares line
+#plt.plot(X, ypred, label = 'Predicted (Least Squares Line)', color='blue')     
+# scatter plot showing actual data
+plt.plot(X, y, 'ro', label ='Collected data')   
+plt.title('Actual vs Predicted')
+plt.xlabel('X')
+plt.ylabel('y')
+plt.legend()
+plt.show()
+
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 78BD65473CB3BD13
+
+
+jupyter nbconvert --to notebook --execute TestJ2m.ipynb
